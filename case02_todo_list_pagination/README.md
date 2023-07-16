@@ -22,6 +22,8 @@
 
 #### 총 페이지 갯수 계산하기
 
+- Math.ceil() : 올림 ; 올림을 해야 나머지도 보이므로.
+
 ```js
 let totalPage = Math.ceil(totalCount / limit)
 ```
@@ -46,14 +48,14 @@ let totalPage = Math.ceil(totalCount / limit) // 11
 const currentPage = 1
 const pageCount = 5
 
-let pageGroup = Math.ceil(currentPage / pageCount) // 1
+let pageGroup = Math.ceil(currentPage / pageCount) // 1 : 첫번째 그룹
 ```
 
 ```js
 const currentPage = 7
 const pageCount = 5
 
-let pageGroup = Math.ceil(currentPage / pageCount) // 2
+let pageGroup = Math.ceil(currentPage / pageCount) // 2 : 두번째 그룹
 ```
 
 #### 현재 페이지 그룹의 첫번째/마지막 숫자 구하기
