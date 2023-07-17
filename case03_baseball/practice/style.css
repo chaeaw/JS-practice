@@ -1,1 +1,92 @@
-/* No CSS */
+@charset "utf-8";
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../practice/assets/bg.jpg') no-repeat center / cover;
+  opacity: 0.6;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  width: calc(100vw - 20px);
+}
+
+.ball_answer {
+  font-size: 18px;
+  font-weight: 700;
+  width: 180px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  margin-top: 16px;
+}
+
+form .ball_input {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  width: 70px;
+  height: 30px;
+  margin-left: 10px;
+  padding: 0 10px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover,
+form button:active,
+form button:focus {
+  background-color: #444;
+}
+
+.ball_question {
+  margin-top: 30px;
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
+
+.ball_question span {
+  display: block;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.ball_question span em {
+  font-size: normal;
+}
